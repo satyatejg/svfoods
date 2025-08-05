@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SV Foods - Andhra Pindi Vantalu</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="assets/logo.png">
 </head>
 <body>
 
@@ -19,6 +20,12 @@
                 <li><a href="pindi-vantalu.html" class="active">Andhra Pindi Vantalu</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -29,15 +36,15 @@
         <div class="product-grid">
             <!-- Product Card 1 -->
             <div class="product-card">
-                <img src="https://placehold.co/400x300/663913/FDFCF8?text=Burelu" alt="Burelu">
-                <h3>Burelu</h3>
+                <img src="assets/boorelu.png" alt="Burelu">
+                <h3>Boorelu</h3>
                 <p class="price">₹CCC per Dozen</p>
                 <p class="description">Sweet dumplings made with chana dal, jaggery, and coconut, deep-fried to a golden brown.</p>
             </div>
 
             <!-- Product Card 2 -->
             <div class="product-card">
-                <img src="https://placehold.co/400x300/663913/FDFCF8?text=Theepi+Gaarelu" alt="Theepi Gaarelu">
+                <img src="assets/theepi-gaarelu.png" alt="Theepi Gaarelu">
                 <h3>Theepi Gaarelu (Sweet Vada)</h3>
                 <p class="price">₹DDD per Dozen</p>
                 <p class="description">A festive delicacy, these sweet vadas are soaked in jaggery syrup for an irresistible taste.</p>
@@ -45,7 +52,7 @@
 
             <!-- Product Card 3 -->
             <div class="product-card">
-                <img src="https://placehold.co/400x300/663913/FDFCF8?text=Chakki" alt="Chakki (Murukku)">
+                <img src="assets/chakkalu.png" alt="Chakki (Murukku)">
                 <h3>Chakki / Murukku</h3>
                 <p class="price">₹EEE per Kg</p>
                 <p class="description">A crispy and savory spiral snack made from rice flour and spices. Perfect with tea.</p>
@@ -58,14 +65,23 @@
             <p>© <span id="year"></span> SV Foods. All Rights Reserved.</p>
             <div class="social-icons">
                 <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/sri_sv_foods/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>
 
     <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+       });
+
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
+
