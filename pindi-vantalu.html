@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Foods - Andhra Pindi Vantalu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="SV Foods Logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Non-Veg Pickles</a></li>
+                <li><a href="pindi-vantalu.html" class="active">Andhra Pindi Vantalu</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Authentic Andhra Pindi Vantalu</h1>
+        <p class="sub-heading">Traditional homemade sweets and savories, made with love.</p>
+
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/663913/FDFCF8?text=Burelu" alt="Burelu">
+                <h3>Burelu</h3>
+                <p class="price">₹CCC per Dozen</p>
+                <p class="description">Sweet dumplings made with chana dal, jaggery, and coconut, deep-fried to a golden brown.</p>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/663913/FDFCF8?text=Theepi+Gaarelu" alt="Theepi Gaarelu">
+                <h3>Theepi Gaarelu (Sweet Vada)</h3>
+                <p class="price">₹DDD per Dozen</p>
+                <p class="description">A festive delicacy, these sweet vadas are soaked in jaggery syrup for an irresistible taste.</p>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <img src="https://placehold.co/400x300/663913/FDFCF8?text=Chakki" alt="Chakki (Murukku)">
+                <h3>Chakki / Murukku</h3>
+                <p class="price">₹EEE per Kg</p>
+                <p class="description">A crispy and savory spiral snack made from rice flour and spices. Perfect with tea.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="year"></span> SV Foods. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
